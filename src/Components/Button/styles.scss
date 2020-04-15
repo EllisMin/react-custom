@@ -6,12 +6,15 @@ $disabled-base1: #888;
 .btn-custom {
   cursor: pointer;
   padding: 0.4rem 0.7rem;
-  background: #ccc;
+  color: #fff;
+  background: #333;
   border-radius: 5px;
-  border: 1px solid #fff;
+  border: 1px solid #333;
+  margin: 0.2rem;
 
   &:hover {
-    background: #999;
+    background: #fff;
+    color: #333;
   }
 
   &:disabled {
