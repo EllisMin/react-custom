@@ -1,11 +1,18 @@
+@import "../Shared/config";
+
 $disabled-base0: #ccc;
 $disabled-base1: #888;
 
 .btn-custom {
   cursor: pointer;
   padding: 0.4rem 0.7rem;
-  background: none;
+  background: #ccc;
   border-radius: 5px;
+  border: 1px solid #fff;
+
+  &:hover {
+    background: #999;
+  }
 
   &:disabled {
     cursor: not-allowed;
@@ -20,5 +27,13 @@ $disabled-base1: #888;
       color: $disabled-base1;
       border: $disabled-base0;
     }
+  }
+}
+
+.btn-info {
+  background: $info-color;
+  color: #fff;
+  &:hover {
+    background: #2e5763;
   }
 }
