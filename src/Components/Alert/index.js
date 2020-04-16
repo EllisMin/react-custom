@@ -9,10 +9,12 @@ const Alert = ({ message, error, danger, onClose }) => {
         <div className={`${danger || error ? "alert-error" : ""} alert-custom`}>
           <div />
           {error ? <p>{error.message}</p> : <p>{message}</p>}
-          {onClose && (
+          {onClose ? (
             <button className="close-custom" onClick={onClose}>
               <span>×</span>
             </button>
+          ) : (
+            <div />
           )}
         </div>
       )}
