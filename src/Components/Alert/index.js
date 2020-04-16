@@ -6,7 +6,7 @@ const Alert = ({ message, error, danger, onClose }) => {
   return (
     <>
       {(message || error) && (
-        <div className={`${danger ? "alert-error" : ""} alert-custom`}>
+        <div className={`${danger || error ? "alert-error" : ""} alert-custom`}>
           <div />
           {error ? <p>{error.message}</p> : <p>{message}</p>}
           {onClose && (
