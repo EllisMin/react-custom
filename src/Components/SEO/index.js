@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 
-function SEO({ metaDescription, lang, meta, title, author }) {
+function SEO({ metaDescription, lang, meta, title, author, imageSrc, url }) {
   return (
     <>
       <Helmet
@@ -31,6 +31,14 @@ function SEO({ metaDescription, lang, meta, title, author }) {
           {
             property: `og:type`,
             content: `website`,
+          },
+          {
+            property: `og:url`,
+            content: url,
+          },
+          {
+            property: `og:image`,
+            content: imageSrc,
           },
           {
             name: `twitter:card`,
