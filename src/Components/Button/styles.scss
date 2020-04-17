@@ -13,6 +13,7 @@ $disabled-base1: #888;
   margin: 0.2rem;
   -webkit-appearance: none;
   appearance: none;
+  user-select: none;
 
   &:hover {
     background: #fff;
