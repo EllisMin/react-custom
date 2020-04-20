@@ -56,6 +56,10 @@ function SEO({ metaDescription, lang, meta, title, author, imageSrc, url }) {
             name: `twitter:description`,
             content: metaDescription,
           },
+          {
+            name: `thumbnail`,
+            content: imageSrc,
+          },
         ].concat(meta)}
       />
       <Helmet>
